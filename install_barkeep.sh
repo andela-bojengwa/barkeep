@@ -13,14 +13,14 @@ set -e
 # If you don't want to set up a reverse proxy you can skip installing and configuring nginx.
 
 # Install core dependencies
-sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y g++ build-essential libxslt1-dev libxml2-dev \
-  python-dev libmysqlclient-dev redis-server mysql-server nginx
+# sudo apt-get update
+# sudo DEBIAN_FRONTEND=noninteractive apt-get install -y g++ build-essential libxslt1-dev libxml2-dev \
+#   python-dev libmysqlclient-dev redis-server mysql-server nginx
 
-# Install git 1.7.6+
-sudo apt-get -y install python-software-properties
-sudo add-apt-repository -y ppa:git-core/ppa && sudo apt-get update
-sudo apt-get install -y git
+# # Install git 1.7.6+
+# sudo apt-get -y install python-software-properties
+# sudo add-apt-repository -y ppa:git-core/ppa && sudo apt-get update
+# sudo apt-get install -y git
 
 # Install ruby 1.9.3-p194
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
